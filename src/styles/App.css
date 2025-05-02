@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.quiz-container {
+    width: 90%;
+    max-width: 600px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}  
+ 
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.answer {
+    display: block;
+    background: #f4f4f9;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.answer:hover {
+    background: #e6e6f0;
+    border-color: #007bff;
+}
+
+.answer.selected {
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+    border-color: #0056b3;
+}
+
+.answer.correct {
+    background: #28a745;
+    color: white;
+    font-weight: bold;
+    border-color: #1e7e34;
+}
+
+.answer.incorrect {
+    background: #dc3545;
+    color: white;
+    font-weight: bold;
+    border-color: #c82333;
+}
+
+.correct-answer {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.next-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+.next-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.next-button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.score-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.score-container h2 {
+    font-size: 1.8rem;
+    color: #333333;
+}
+
+.score-container p {
+    font-size: 1.2rem;
+    color: #555555;
+}
+
+.retake-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+.retake-button:hover {
+    background-color: #218838;
+}
